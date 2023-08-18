@@ -1,0 +1,16 @@
+class Rectangle:
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+
+    def Area(self):
+        return self.length * self.width
+
+rectangleLength = float(input("Type the length here: "))
+rectangleWidth = float(input("Type the width here: "))
+unit_choice = input("Choose a unit for the area (cm, m, inches, etc.): ")
+
+rectangle = Rectangle(rectangleLength, rectangleWidth)
+area = rectangle.Area()
+
+print("Area:", area, unit_choice)
